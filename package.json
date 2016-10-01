@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "fontnik": "^0.4.4"
+  },
+  "scripts": {
+    "start": "./generate.sh",
+    "test": "./generate.sh"
+  }
+}
