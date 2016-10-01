@@ -40,6 +40,26 @@ mkdir -p \
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/RobotoCondensed-LightItalic.ttf "glyphs/Roboto Condensed Light Italic"
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/RobotoCondensed-Regular.ttf     "glyphs/Roboto Condensed Regular"
 
+cp fonts/roboto/LICENSE "glyphs/Roboto Black"
+cp fonts/roboto/LICENSE "glyphs/Roboto Black"
+cp fonts/roboto/LICENSE "glyphs/Roboto Black Italic"
+cp fonts/roboto/LICENSE "glyphs/Roboto Bold"
+cp fonts/roboto/LICENSE "glyphs/Roboto Bold Italic"
+cp fonts/roboto/LICENSE "glyphs/Roboto Italic"
+cp fonts/roboto/LICENSE "glyphs/Roboto Light"
+cp fonts/roboto/LICENSE "glyphs/Roboto Light Italic"
+cp fonts/roboto/LICENSE "glyphs/Roboto Medium"
+cp fonts/roboto/LICENSE "glyphs/Roboto Medium Italic"
+cp fonts/roboto/LICENSE "glyphs/Roboto Regular"
+cp fonts/roboto/LICENSE "glyphs/Roboto Thin"
+cp fonts/roboto/LICENSE "glyphs/Roboto Thin Italic"
+cp fonts/roboto/LICENSE "glyphs/Roboto Condensed Bold"
+cp fonts/roboto/LICENSE "glyphs/Roboto Condensed Bold Italic"
+cp fonts/roboto/LICENSE "glyphs/Roboto Condensed Italic"
+cp fonts/roboto/LICENSE "glyphs/Roboto Condensed Light"
+cp fonts/roboto/LICENSE "glyphs/Roboto Condensed Light Italic"
+cp fonts/roboto/LICENSE "glyphs/Roboto Condensed Regular"
+
 cd glyphs
 tar -czvf Roboto.tar.gz Roboto*
 cd -
