@@ -19,7 +19,11 @@ mkdir -p \
   "glyphs/Roboto Condensed Italic" \
   "glyphs/Roboto Condensed Light" \
   "glyphs/Roboto Condensed Light Italic" \
-  "glyphs/Roboto Condensed Regular"
+  "glyphs/Roboto Condensed Regular" \
+  "glyphs/Noto Sans Bold" \
+  "glyphs/Noto Sans Bold Italic" \
+  "glyphs/Noto Sans Italic" \
+  "glyphs/Noto Sans Regular"
 
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/Roboto-Black.ttf                "glyphs/Roboto Black"
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/Roboto-BlackItalic.ttf          "glyphs/Roboto Black Italic"
@@ -39,6 +43,10 @@ mkdir -p \
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/RobotoCondensed-Light.ttf       "glyphs/Roboto Condensed Light"
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/RobotoCondensed-LightItalic.ttf "glyphs/Roboto Condensed Light Italic"
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/RobotoCondensed-Regular.ttf     "glyphs/Roboto Condensed Regular"
+./node_modules/.bin/build-glyphs fonts/noto/hinted/NotoSans-Bold.ttf                 "glyphs/Noto Sans Bold"
+./node_modules/.bin/build-glyphs fonts/noto/hinted/NotoSans-BoldItalic.ttf           "glyphs/Noto Sans Bold Italic"
+./node_modules/.bin/build-glyphs fonts/noto/hinted/NotoSans-Italic.ttf               "glyphs/Noto Sans Italic"
+./node_modules/.bin/build-glyphs fonts/noto/hinted/NotoSans-Regular.ttf              "glyphs/Noto Sans Regular"
 
 cp fonts/roboto/LICENSE "glyphs/Roboto Black"
 cp fonts/roboto/LICENSE "glyphs/Roboto Black"
@@ -59,4 +67,8 @@ cp fonts/roboto/LICENSE "glyphs/Roboto Condensed Italic"
 cp fonts/roboto/LICENSE "glyphs/Roboto Condensed Light"
 cp fonts/roboto/LICENSE "glyphs/Roboto Condensed Light Italic"
 cp fonts/roboto/LICENSE "glyphs/Roboto Condensed Regular"
+cp fonts/noto/LICENSE   "glyphs/Noto Sans Bold"
+cp fonts/noto/LICENSE   "glyphs/Noto Sans Bold Italic"
+cp fonts/noto/LICENSE   "glyphs/Noto Sans Italic"
+cp fonts/noto/LICENSE   "glyphs/Noto Sans Regular"
 

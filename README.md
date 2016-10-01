@@ -1,4 +1,4 @@
-# font-glyphs
+# font-glyphs
 A script to generate font glyphs ready for the [mapbox-gl styles](https://www.mapbox.com/mapbox-gl-style-spec).
 
 [![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)][stability]
@@ -14,19 +14,12 @@ A script to generate font glyphs ready for the [mapbox-gl styles](https://www.ma
 Currently
 
  - [Roboto](https://github.com/google/roboto)
+ - [Noto](https://github.com/googlei18n/noto-fonts)
 
 
+## Usage
+All glyphs are built on commit and written to `https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf` ready for using in your mapbox-gl styles
 
-## Dev usage
-
-```
-$ git checkout https://github.com/orangemug/font-glyphs.git
-$ cd font-glyphs
-$ git submodule sync
-$ git submodule update --init
-$ ./generate.sh
-Glyphs written to `/Users/user/font-glyphs/glyphs`
-``` 
 
 
 ## License
