@@ -60,6 +60,3 @@ cp fonts/roboto/LICENSE "glyphs/Roboto Condensed Light"
 cp fonts/roboto/LICENSE "glyphs/Roboto Condensed Light Italic"
 cp fonts/roboto/LICENSE "glyphs/Roboto Condensed Regular"
 
-cd glyphs
-tar -czvf Roboto.tar.gz Roboto*
-cd -
