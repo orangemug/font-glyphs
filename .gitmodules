@@ -1,3 +1,6 @@
 [submodule "fonts/roboto"]
 	path = fonts/roboto
 	url = https://github.com/google/roboto.git
+[submodule "fonts/noto"]
+	path = fonts/noto
+	url = https://github.com/googlei18n/noto-fonts.git
