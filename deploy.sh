@@ -6,10 +6,10 @@ set -e
 SHA=`git rev-parse --verify HEAD`
 
 git checkout gh-pages || git checkout --orphan gh-pages
+rm .git/index
 
 git add glyphs
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
 git push origin gh-pages
-git checkout master
-
+git checkout master -f
