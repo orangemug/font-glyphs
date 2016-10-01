@@ -1,7 +1,8 @@
-general:
-  artifacts:
-    - "glyphs/*.tar.gz"
 checkout:
   post:
     - git submodule sync
     - git submodule update --init
+test:
+  post:
+    - mv glyphs/*.tar.gz $CIRCLE_ARTIFACTS/
+
