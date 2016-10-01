@@ -41,5 +41,5 @@ mkdir -p \
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/RobotoCondensed-Regular.ttf     "glyphs/Roboto Condensed Regular"
 
 cd glyphs
-tar -czvf Roboto.tar.gz "Roboto*"
+tar -czvf Roboto.tar.gz Roboto*
 cd -
