@@ -1,6 +1,6 @@
 general:
   artifacts:
-    - "glyphs/*.zip"
+    - "glyphs/*.tar.gz"
 checkout:
   post:
     - git submodule sync
