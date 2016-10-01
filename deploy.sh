@@ -14,6 +14,9 @@ SHA=`git rev-parse --verify HEAD`
 git checkout gh-pages || git checkout --orphan gh-pages
 rm .git/index
 
+git config user.name "Deploy bot"
+git config user.email ""
+
 git add -f glyphs
 
 if [ -n "`git diff --staged`" ]; then
