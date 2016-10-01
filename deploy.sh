@@ -14,7 +14,7 @@ SHA=`git rev-parse --verify HEAD`
 git checkout gh-pages || git checkout --orphan gh-pages
 rm .git/index
 
-git add glyphs
+git add -f glyphs
 
 if [ -n "`git diff --staged`" ]; then
   git commit -m "Deploy to GitHub Pages: ${SHA}"
