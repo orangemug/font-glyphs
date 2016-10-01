@@ -13,7 +13,7 @@ A script to generate font glyphs ready for the [mapbox-gl styles](https://www.ma
 
 Currently
 
- - [Roboto](/fonts/roboto)
+ - [Roboto](https://github.com/google/roboto)
 
 
 
