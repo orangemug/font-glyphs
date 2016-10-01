@@ -17,13 +17,15 @@ Currently
 
 
 
-## Usage
+## Dev usage
 
 ```
 $ git checkout https://github.com/orangemug/font-glyphs.git
 $ cd font-glyphs
-$ npm start
-Glyphs written to `/Users/jane/dev/projects/font-glyphs/glyphs`
+$ git submodule sync
+$ git submodule update --init
+$ ./generate.sh
+Glyphs written to `/Users/user/font-glyphs/glyphs`
 ``` 
 
 
