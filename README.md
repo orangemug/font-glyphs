@@ -21,6 +21,9 @@ Currently
 All glyphs are built on commit and written to `https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf` ready for using in your mapbox-gl styles
 
 
+## Forking
+If you'd like to fork this repo and generate CircleCI tests, you'll need to add ssh keys for writing to your repo. Details to do that are here <https://circleci.com/docs/adding-read-write-deployment-key/>
+
 
 ## License
 See individual font licenses in [./fonts](/fonts)
