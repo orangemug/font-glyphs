@@ -39,3 +39,7 @@ mkdir -p \
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/RobotoCondensed-Light.ttf       "glyphs/Roboto Condensed Light"
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/RobotoCondensed-LightItalic.ttf "glyphs/Roboto Condensed Light Italic"
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/RobotoCondensed-Regular.ttf     "glyphs/Roboto Condensed Regular"
+
+cd glyphs
+tar -czvf Roboto.tar.gz "Roboto*"
+cd -
