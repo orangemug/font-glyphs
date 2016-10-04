@@ -1,6 +1,13 @@
 {
+  "name": "font-glyphs",
+  "private": true,
   "dependencies": {
-    "fontnik": "^0.4.4"
+    "bluebird": "^3.4.6",
+    "fontnik": "^0.4.4",
+    "fs-promise": "^0.5.0",
+    "glob-promise": "^1.0.6",
+    "protobuf-textformat": "yufanyufan/protobuf-textformat#yufanyufan-patch-1",
+    "protobufjs": "^5.0.1"
   },
   "scripts": {
     "start": "./generate.sh",
