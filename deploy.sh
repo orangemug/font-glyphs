@@ -17,7 +17,7 @@ rm .git/index
 git add -f glyphs
 
 if [ -n "`git diff --staged`" ]; then
-  git commit -m "Deploy to GitHub Pages: ${SHA}" --author="Deploy bot"
+  git commit -m "Deploy to GitHub Pages: ${SHA}" --author="Deploy bot <none@example.com>"
   git push origin gh-pages
 else
   >&2 echo "Nothing to deploy"
