@@ -81,7 +81,7 @@
     },
     "osm2vectortiles": {
       "type": "vector",
-      "url": "https://osm2vectortiles.tileserver.com/v2.json"
+      "url": "https://orangemug.github.io/font-glyphs-v2/example/source.json"
     }
   },
   "sprite": "https://osm-liberty.lukasmartinelli.ch/sprites/osm-liberty",

@@ -1,0 +1,37 @@
+{
+  "scheme": "xyz",
+  "basename": "v2",
+  "id": "osm2vectortiles",
+  "filesize": "55719548",
+  "attribution": "<a href=\"http://www.openstreetmap.org/about/\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
+  "center": "8.5388,47.3434,12",
+  "description": "Free vector tiles from from http://osm2vectortiles.org",
+  "maxzoom": 14,
+  "minzoom": 0,
+  "name": "osm2vectortiles",
+  "mtime": "1463000297761",
+  "format": "pbf",
+  "bounds": [
+    -180,
+    -85.051128779807,
+    180,
+    85.051128779807
+  ],
+  "maskLevel": "8",
+  "type": "baselayer",
+  "version": "2",
+  "profile": "mercator",
+  "tilejson": "2.0.0",
+  "tiles": [
+    "https://osm2vectortiles-0.tileserver.com/v2/{z}/{x}/{y}.pbf",
+    "https://osm2vectortiles-1.tileserver.com/v2/{z}/{x}/{y}.pbf",
+    "https://osm2vectortiles-2.tileserver.com/v2/{z}/{x}/{y}.pbf",
+    "https://osm2vectortiles-3.tileserver.com/v2/{z}/{x}/{y}.pbf"
+  ],
+  "grids": [
+    "https://osm2vectortiles-0.tileserver.com/v2/{z}/{x}/{y}.grid.json",
+    "https://osm2vectortiles-1.tileserver.com/v2/{z}/{x}/{y}.grid.json",
+    "https://osm2vectortiles-2.tileserver.com/v2/{z}/{x}/{y}.grid.json",
+    "https://osm2vectortiles-3.tileserver.com/v2/{z}/{x}/{y}.grid.json"
+  ]
+}
