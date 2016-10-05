@@ -75,7 +75,7 @@
       "maxzoom": 6,
       "tileSize": 256,
       "tiles": [
-        "http://naturalearthtiles.org/tiles/natural_earth_2_shaded_relief.raster/{z}/{x}/{y}.png"
+        "https://naturalearthtiles.org/tiles/natural_earth_2_shaded_relief.raster/{z}/{x}/{y}.png"
       ],
       "type": "raster"
     },
@@ -84,7 +84,7 @@
       "url": "https://osm2vectortiles.tileserver.com/v2.json"
     }
   },
-  "sprite": "http://osm-liberty.lukasmartinelli.ch/sprites/osm-liberty",
+  "sprite": "https://osm-liberty.lukasmartinelli.ch/sprites/osm-liberty",
   "glyphs": "https://orangemug.github.io/font-glyphs-v2/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
