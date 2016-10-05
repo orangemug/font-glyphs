@@ -6,8 +6,8 @@ if [[ -n $(git status -s) ]]; then
   exit 1
 fi
 
->&2 echo "Generating glyphs"
-./generate.sh
+# >&2 echo "Generating glyphs"
+# ./generate.sh
 
 SHA=`git rev-parse --verify HEAD`
 
