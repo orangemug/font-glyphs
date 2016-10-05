@@ -10,7 +10,7 @@
     "protobufjs": "^5.0.1"
   },
   "scripts": {
-    "start": "./generate.sh",
-    "test": "./generate.sh"
+    "start": "node lib/index.js",
+    "test": "node lib/index.js"
   }
 }
