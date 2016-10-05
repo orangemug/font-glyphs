@@ -8,6 +8,12 @@ var map = new mapboxgl.Map({
 var style = fetch("osm-liberty.json")
   .then(function(resp) {
     return resp.json()
+      .then(function(style) {
+        if(location.host.match(/^localhost/)) {
+          style.glyphs = "http://localhost:5000/glyphs/{fontstack}/{range}.pbf"
+          return style;
+        }
+      })
   })
 
 style.then(function(data) {
