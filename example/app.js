@@ -20,7 +20,12 @@ style.then(function(data) {
   map.setStyle(data);
 });
 
-var glyphs = fetch("/glyphs/index.json")
+var glyphsUrl = "/font-glyphs-v2/glyphs/index.json"
+if(location.host.match(/^localhost/)) {
+  glyphsUrl = "/glyphs/index.json";
+}
+
+var glyphs = fetch(glyphsUrl)
   .then(function(resp) {
     return resp.json()
   })
