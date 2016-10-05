@@ -23,8 +23,14 @@ body {
   left: 10px;
   top: 10px;
   z-index: 9999;
-  background-color: #fff;
+  background-color: #2f2f2f;
   padding: 8px 10px;
-  border: solid 1px #d8d8d8;
+  border: solid 1px #656565;
   border-radius: 2px;
+  color: #eee;
+}
+
+.toolbox__note {
+  font-size: 14px;
+  margin-top: 4px;
 }
