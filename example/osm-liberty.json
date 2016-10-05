@@ -71,14 +71,6 @@
     "mapbox:type": "template"
   },
   "sources": {
-    "natural_earth_shaded_relief": {
-      "maxzoom": 6,
-      "tileSize": 256,
-      "tiles": [
-        "https://naturalearthtiles.org/tiles/natural_earth_2_shaded_relief.raster/{z}/{x}/{y}.png"
-      ],
-      "type": "raster"
-    },
     "osm2vectortiles": {
       "type": "vector",
       "url": "https://orangemug.github.io/font-glyphs-v2/example/source.json"
@@ -93,31 +85,6 @@
       "interactive": true,
       "paint": {
         "background-color": "rgb(239,239,239)"
-      }
-    },
-    {
-      "id": "natural_earth",
-      "type": "raster",
-      "source": "natural_earth_shaded_relief",
-      "maxzoom": 6,
-      "interactive": true,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "raster-opacity": {
-          "base": 1.5,
-          "stops": [
-            [
-              0,
-              0.6
-            ],
-            [
-              6,
-              0.1
-            ]
-          ]
-        }
       }
     },
     {
