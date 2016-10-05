@@ -16,6 +16,7 @@ cp -r example example_new
 git checkout gh-pages || git checkout --orphan gh-pages
 rm .git/index
 
+rm -rf example
 mv example_new example
 
 git config user.name "Deploy bot"
