@@ -11,8 +11,12 @@ fi
 
 SHA=`git rev-parse --verify HEAD`
 
+cp -r example example_new
+
 git checkout gh-pages || git checkout --orphan gh-pages
-# rm .git/index
+rm .git/index
+
+mv example_new example
 
 git config user.name "Deploy bot"
 git config user.email "none@example.com"
