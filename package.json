@@ -6,6 +6,7 @@
     "fontnik": "^0.4.4",
     "freetype2": "igorklopov/node-freetype2",
     "fs-promise": "^0.5.0",
+    "glob": "^7.1.0",
     "glob-promise": "^1.0.6",
     "handlebars": "^4.0.5",
     "protobuf-textformat": "yufanyufan/protobuf-textformat#yufanyufan-patch-1",

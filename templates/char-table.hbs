@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Title</title>
+    <title>char-table report</title>
     <link rel="stylesheet" type="text/css" href="app.css">
     <style>
 
@@ -49,7 +49,7 @@
         {{#fonts}}
         <tr>
           <td>
-            {{family_name}}
+            {{family_name}} {{style_name}}
           </td>
           {{#ranges}}
             <td class="state-{{state}}">{{coverage.num}} / {{coverage.total}}</td>

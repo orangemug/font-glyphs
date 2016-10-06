@@ -23,6 +23,7 @@ git config user.name "Deploy bot"
 git config user.email "none@example.com"
 
 git add -f glyphs
+git add -f reports
 git add -f example
 
 if [ -n "`git diff --staged`" ]; then

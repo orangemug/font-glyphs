@@ -6,4 +6,6 @@ deployment:
   staging:
     branch: master
     commands:
+      - node lib/build-charmap.js
+      - node lib/render-charmap-report.js
       - ./deploy.sh
