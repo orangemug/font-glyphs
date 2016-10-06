@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <style>
+
+      table {
+        border-spacing: 1px;
+      }
+
+      tbody {
+        height: 200px;
+        overflow: hidden;
+      }
+
+      td {
+        padding: 2px 4px;
+        white-space: nowrap;
+      }
+
+      .state-full    { background: #C5E1A5; }
+      .state-partial { background: #FFF59D; }
+      .state-none    { background: #EF9A9A; }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Font coverage</h1>
+      <p>
+      Show the coverage of different fonts in unicode range from <a href="https://github.com/google/fonts">google/fonts</a>
+      <p>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <td></td>
+          {{#unicodeRanges}}
+            <td>{{category}}</td>
+          {{/unicodeRanges}}
+        </tr>
+      </thead>
+      <tbody>
+        {{#fonts}}
+        <tr>
+          <td>
+            {{family_name}}
+          </td>
+          {{#ranges}}
+            <td class="state-{{state}}">{{coverage.num}} / {{coverage.total}}</td>
+          {{/ranges}}
+        </tr>
+        {{/fonts}}
+      </tbody>
+    </table>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
+
