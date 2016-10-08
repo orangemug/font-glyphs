@@ -12,12 +12,16 @@ fi
 SHA=`git rev-parse --verify HEAD`
 
 cp -r example example_new
+cp -r reports reports_new
 
 git checkout gh-pages || git checkout --orphan gh-pages
 rm .git/index
 
 rm -rf example
 mv example_new example
+
+rm -rf reports
+mv reports_new reports
 
 git config user.name "Deploy bot"
 git config user.email "none@example.com"
