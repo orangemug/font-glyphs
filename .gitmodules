@@ -10,3 +10,6 @@
 [submodule "fonts/noto-emoji"]
 	path = fonts/noto-emoji
 	url = https://github.com/googlei18n/noto-emoji.git
+[submodule "fonts/noto-cjk"]
+	path = fonts/noto-cjk
+	url = https://github.com/googlei18n/noto-cjk.git
