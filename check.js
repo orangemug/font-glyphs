@@ -1,62 +1,54 @@
 var fs      = require("fs");
-var fontnik = require("fontnik");
-
-fontnik.load(
-  fs.readFileSync(__dirname+"/fonts/google/ofl/vollkorn/Vollkorn-Bold.ttf"),
-  function(err, data) {
-    return;
-    console.log(err, data);
-    console.log(data[0].points.map(function(point) {
-      return String.fromCodePoint(point)
-    }))
-  }
-)
-
-
-var ProtoBuf   = require('protobufjs')
-var TextFormat = require("protobuf-textformat");
+var unicodeRanges = require('unicode-range-json')();
 var Pbf = require("pbf")
 
 var Glyphs = require("./node_modules/fontnik/test/format/glyphs");
 
 var out = [];
 
-for (var i = 0; i < 65536; (i = i + 256)) {
-  var start = i;
-  var end = Math.min(i + 255, 65535);
+var out = unicodeRanges.map(function(_range) {
+  var range = {};
+  range.category = _range.category;
 
-  var vt = new Glyphs(new Pbf(new Uint8Array(
-    fs.readFileSync(
-      __dirname+"/glyphs/Noto Sans/"+start+"-"+end+".pbf"
-    )
-  )));
+  var min = _range.range[0];
+  var max = _range.range[1];
+  var hasMatched = false;
 
-  var obj = vt.stacks['Noto Sans Regular'].glyphs
+  var total = max - min;
+  var num = 0;
 
-  for(var k = start; k < end; k++) {
-    if(obj.hasOwnProperty(k)) {
-      out.push({
-        key: String.fromCodePoint(k),
-        avail: !!obj[k].bitmap
-      });
+  var start, end, glyphs;
+
+  for(var i=min; i<Math.min(max, 65536); i++) {
+    var _rIdx = Math.floor(i/256)
+    var currStart = _rIdx*256;
+    var currEnd   = ((_rIdx+1)*256)-1;
+
+    if(currStart !== start) {
+      start = currStart;
+      end   = currEnd;
+
+      var vt = new Glyphs(new Pbf(new Uint8Array(
+        fs.readFileSync(
+          // __dirname+"/glyphs/Roboto/"+start+"-"+end+".pbf"
+          __dirname+"/fonts/klokantech-gl-fonts/KlokanTech Noto Sans CJK Regular/"+start+"-"+end+".pbf"
+        )
+      )));
+
+      glyphs = vt.stacks['KlokanTech Noto Sans CJK Regular'].glyphs
     }
-    else {
-      out.push({
-        key: String.fromCodePoint(k),
-        avail: false
-      });
+
+
+    if(glyphs.hasOwnProperty(i)) {
+      hasMatched = true;
+      num++;
     }
   }
 
-}
-
-out = out
-  .filter(function(obj) {
-    return !obj.avail 
-  })
-
-out.forEach(function(obj) {
-  console.log('"%s" %s"', obj.key, (obj.avail ? "available" : "missing"))
+  range.coverage = {num: num, total: total};
+  return range;
 })
 
-
+console.log(
+  JSON.stringify(out, null, 2)
+);

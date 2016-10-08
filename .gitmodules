@@ -1,3 +1,12 @@
 [submodule "google-fonts"]
 	path = fonts/google
 	url = https://github.com/google/fonts.git
+[submodule "fonts/klokantech-gl-fonts"]
+	path = fonts/klokantech-gl-fonts
+	url = https://github.com/klokantech/klokantech-gl-fonts.git
+[submodule "fonts/noto-repo"]
+	path = fonts/noto-repo
+	url = https://github.com/googlei18n/noto-fonts.git
+[submodule "fonts/noto-emoji"]
+	path = fonts/noto-emoji
+	url = https://github.com/googlei18n/noto-emoji.git
