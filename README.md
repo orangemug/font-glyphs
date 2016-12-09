@@ -27,7 +27,6 @@ Features:
    - Auto finds LICENSE
  - Generated `index.json` describing all generated fonts, useful for an editor (maybe maputnik)
  - Reports to check whether a font is fit for the task
- - An example map to play with your fint choices.
 
 
 ## Work in progress
