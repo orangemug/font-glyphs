@@ -76,7 +76,7 @@
       "url": "https://orangemug.github.io/font-glyphs-v2/example/source.json"
     }
   },
-  "sprite": "https://osm-liberty.lukasmartinelli.ch/sprites/osm-liberty",
+  "sprite": "http://osm-liberty.lukasmartinelli.ch/sprites/osm-liberty",
   "glyphs": "https://orangemug.github.io/font-glyphs-v2/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
