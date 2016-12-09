@@ -1,23 +1,23 @@
-# font-glyphs
+# font-glyphs-v2
 A repo to generate font glyphs ready for the [mapbox-gl styles](https://www.mapbox.com/mapbox-gl-style-spec).
 
 **NOTE** This is a work in progress v2 see [font-glyphs](https://github.com/orangemug/font-glyphs) for the current stable repo.
 
 [![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)][stability]
-[![Build Status](https://circleci.com/gh/orangemug/font-glyphs.png?style=shield)][circleci]
-[![Dependency Status](https://david-dm.org/orangemug/font-glyphs.svg)][dm-prod]
-[![Dev Dependency Status](https://david-dm.org/orangemug/font-glyphs/dev-status.svg)][dm-dev]
+[![Build Status](https://circleci.com/gh/orangemug/font-glyphs-v2.png?style=shield)][circleci]
+[![Dependency Status](https://david-dm.org/orangemug/font-glyphs-v2.svg)][dm-prod]
+[![Dev Dependency Status](https://david-dm.org/orangemug/font-glyphs-v2/dev-status.svg)][dm-dev]
 
 [stability]:   https://github.com/orangemug/stability-badges#unstable
-[circleci]:    https://circleci.com/gh/orangemug/font-glyphs
-[dm-prod]:     https://david-dm.org/orangemug/font-glyphs
-[dm-dev]:      https://david-dm.org/orangemug/font-glyphs#info=devDependencies
+[circleci]:    https://circleci.com/gh/orangemug/font-glyphs-v2
+[dm-prod]:     https://david-dm.org/orangemug/font-glyphs-v2
+[dm-dev]:      https://david-dm.org/orangemug/font-glyphs-v2#info=devDependencies
 
 Current fonts can be viewed here <https://github.com/orangemug/font-glyphs-v2/tree/gh-pages/glyphs>
 
 
 ## Usage
-All glyphs are built on commit and written to `https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf` ready for using in your mapbox-gl styles
+All glyphs are built on commit and written to `https://orangemug.github.io/font-glyphs-v2/glyphs/{fontstack}/{range}.pbf` ready for using in your mapbox-gl styles
 
 Features:
 
