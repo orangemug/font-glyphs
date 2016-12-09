@@ -25,7 +25,7 @@ Features:
    - See <https://github.com/orangemug/font-glyphs-v2/blob/master/lib/index.js> for details
    - Easy to generate new fonts <https://github.com/orangemug/font-glyphs-v2/blob/master/lib/index.js#L97-L111>
    - Auto finds LICENSE
- - Generated `index.json` describing all generated fonts, useful for an editor (maybe maputnik)
+ - Generated [index.json](https://orangemug.github.io/font-glyphs-v2/glyphs/index.json) describing all generated fonts, useful for an editor (maybe maputnik)
  - Reports to check whether a font is fit for the task
 
 
@@ -36,7 +36,7 @@ The following features are a work in progress
 Currently we do not provides fallbacks for missing glyphs in the font, this is a work in progress. The suitability of a font can be determined via the _reports_ below.
 
 ### Reports
-We generate reports for every font we use in order to check its coverage
+We generate reports for every font we have access to in order to check its coverage
 
 See: <https://orangemug.github.io/font-glyphs-v2/reports/char-table.html> **NOTE** its currently one very large html table (22mb)
 
