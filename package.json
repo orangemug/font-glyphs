@@ -5,11 +5,11 @@
     "bluebird": "^3.4.6",
     "fontnik": "^0.4.8",
     "freetype2": "igorklopov/node-freetype2",
-    "fs-promise": "^0.5.0",
-    "glob": "^7.1.0",
-    "glob-promise": "^1.0.6",
-    "handlebars": "^4.0.5",
-    "protobufjs": "^5.0.1",
+    "fs-promise": "^1.0.0",
+    "glob": "^7.1.1",
+    "glob-promise": "^2.0.0",
+    "handlebars": "^4.0.6",
+    "protobufjs": "^6.0.2",
     "unicode-range-json": "0.0.3"
   },
   "scripts": {
