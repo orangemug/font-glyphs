@@ -1,4 +1,6 @@
 dependencies:
+  pre:
+    - sudo apt-get update; sudo apt-get install clang-3.5 libstdc++-4.9-dev libstdc++6
   override:
     - npm install --build-from-source
 checkout:
