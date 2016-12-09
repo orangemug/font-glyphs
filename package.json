@@ -9,7 +9,8 @@
     "glob": "^7.1.1",
     "glob-promise": "^2.0.0",
     "handlebars": "^4.0.6",
-    "protobufjs": "^6.0.2",
+    "protobufjs": "^5.0.1",
+    "protobuf-textformat": "yufanyufan/protobuf-textformat#yufanyufan-patch-1",
     "unicode-range-json": "0.0.3"
   },
   "scripts": {
