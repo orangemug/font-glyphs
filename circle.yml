@@ -1,3 +1,6 @@
+machine:
+  node:
+    version: 5.11.0
 dependencies:
   pre:
     - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
