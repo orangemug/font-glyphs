@@ -14,8 +14,8 @@ SHA=`git rev-parse --verify HEAD`
 git checkout gh-pages || git checkout --orphan gh-pages
 rm .git/index
 
-git config user.name "Deploy bot"
-git config user.email ""
+git config --global user.name "Deploy bot"
+git config --global user.email ""
 
 git add -f glyphs
 git add -f fontstacks.json
