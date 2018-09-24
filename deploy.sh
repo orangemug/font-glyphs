@@ -18,6 +18,7 @@ git config user.name "Deploy bot"
 git config user.email ""
 
 git add -f glyphs
+git add -f fontstacks.json
 
 if [ -n "`git diff --staged`" ]; then
   git commit -m "Deploy to GitHub Pages: ${SHA}"
