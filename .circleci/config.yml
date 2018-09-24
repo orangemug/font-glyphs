@@ -13,10 +13,10 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: install-deps
-					command: |
-						git submodule sync
-						git submodule update --init
-						npm install
+          command: |
+            git submodule sync
+            git submodule update --init
+            npm install
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
