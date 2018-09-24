@@ -1,0 +1,30 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/code
+    docker:
+      - image: node:8
+    steps:
+      - checkout
+      - run:
+          name: update-npm 
+          command: 'sudo npm install -g npm@latest'
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: install-deps
+					command: |
+						git submodule sync
+						git submodule update --init
+						npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: test
+          command: npm test
+    branches:
+      only:
+        - master
+
