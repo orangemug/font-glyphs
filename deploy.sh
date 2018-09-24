@@ -15,7 +15,7 @@ git checkout gh-pages || git checkout --orphan gh-pages
 rm .git/index
 
 git config --global user.name "Deploy bot"
-git config --global user.email ""
+git config --global user.email "deploybot@maputnik.com"
 
 git add -f glyphs
 git add -f fontstacks.json
