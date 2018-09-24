@@ -25,6 +25,34 @@ mkdir -p \
   "glyphs/Noto Sans Italic" \
   "glyphs/Noto Sans Regular"
 
+cat << EOF > fontstacks.json
+[
+  "Roboto Black",
+  "Roboto Black",
+  "Roboto Black Italic",
+  "Roboto Bold",
+  "Roboto Bold Italic",
+  "Roboto Italic",
+  "Roboto Light",
+  "Roboto Light Italic",
+  "Roboto Medium",
+  "Roboto Medium Italic",
+  "Roboto Regular",
+  "Roboto Thin",
+  "Roboto Thin Italic",
+  "Roboto Condensed Bold",
+  "Roboto Condensed Bold Italic",
+  "Roboto Condensed Italic",
+  "Roboto Condensed Light",
+  "Roboto Condensed Light Italic",
+  "Roboto Condensed Regular",
+  "Noto Sans Bold",
+  "Noto Sans Bold Italic",
+  "Noto Sans Italic",
+  "Noto Sans Regular"
+]
+EOF
+
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/Roboto-Black.ttf                "glyphs/Roboto Black"
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/Roboto-BlackItalic.ttf          "glyphs/Roboto Black Italic"
 ./node_modules/.bin/build-glyphs fonts/roboto/hinted/Roboto-Bold.ttf                 "glyphs/Roboto Bold"
