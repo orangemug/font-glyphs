@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "fontnik": "^0.4.4"
+    "fontnik": "^0.5.1"
   },
   "scripts": {
     "start": "./generate.sh",
