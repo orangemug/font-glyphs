@@ -25,7 +25,7 @@ mkdir -p \
   "glyphs/Noto Sans Italic" \
   "glyphs/Noto Sans Regular"
 
-cat << EOF > fontstacks.json
+cat << EOF > glyphs.json
 [
   "Roboto Black",
   "Roboto Black",
