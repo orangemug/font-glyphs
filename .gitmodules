@@ -4,3 +4,6 @@
 [submodule "fonts/noto"]
 	path = fonts/noto
 	url = https://github.com/googlei18n/noto-fonts.git
+[submodule "fonts/opensans"]
+	path = fonts/opensans
+	url = https://github.com/googlefonts/opensans.git
