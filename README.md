@@ -15,6 +15,7 @@ Currently
 
  - [Roboto](https://github.com/google/roboto)
  - [Noto](https://github.com/googlei18n/noto-fonts)
+ - [OpenSans](https://github.com/googlefonts/opensans)
 
 
 ## Usage
