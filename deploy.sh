@@ -11,7 +11,10 @@ fi
 
 SHA=`git rev-parse --verify HEAD`
 
+git stash save dirty-state
 git checkout -b gh-pages origin/gh-pages || git checkout --orphan gh-pages
+git stash pop dirty-state || true
+
 rm .git/index
 
 git config --global user.name "Deploy bot"
