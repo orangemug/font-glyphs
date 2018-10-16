@@ -11,7 +11,7 @@ fi
 
 SHA=`git rev-parse --verify HEAD`
 
-git checkout -b gh-pages origin/gh-pages # || git checkout --orphan gh-pages
+git checkout -b gh-pages origin/gh-pages || git checkout --orphan gh-pages
 rm .git/index
 
 git config --global user.name "Deploy bot"
