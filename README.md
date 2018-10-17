@@ -25,6 +25,38 @@ All glyphs are built on commit and written to `https://orangemug.github.io/font-
 ## Forking
 If you'd like to fork this repo and generate CircleCI tests, you'll need to add ssh keys for writing to your repo. Details to do that are here <https://circleci.com/docs/adding-read-write-deployment-key/>
 
+## Usage for Offline Maps and styles
+
+### `gh-pages` already has glyphs built
+
+``` bash
+git checkout gh-pages
+cd glyphs
+```
+
+### Or, Generate glyphs
+
+``` bash
+# cd to fonts and clone fonts, LICENSE and all
+cd fonts
+# ~70 MB
+git clone https://github.com/google/roboto.git
+# ~950 MB!!
+git clone https://github.com/googlei18n/noto-fonts.git
+
+# generate.sh script assumes folder is called noto
+mv noto-fonts noto
+```
+
+``` bash
+cd ..
+# install the fonts cutters that are detailed in package.json
+npm install
+
+#
+sh generate.sh
+cd glyphs
+```
 
 ## License
 See individual font licenses in [./fonts](/fonts)
